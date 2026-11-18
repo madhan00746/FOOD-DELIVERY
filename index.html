@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress - Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>FoodExpress</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#menu">Food Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Delicious Food Delivered Fast!</h1>
+            <p>Fresh, tasty food delivered straight to your doorstep.</p>
+            <a href="#menu" class="btn">Explore Food</a>
+        </div>
+    </section>
+
+    <!-- Restaurants -->
+    <section id="restaurants">
+        <h2>Our Restaurants</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://img.magnific.com/premium-photo/modern-kitchen-cooks-prepare-meals-stove-kitchen-restaurant-hotel_109285-169.jpg" alt="Biryani">
+                <h3>Spicy Kitchen</h3>
+                <p>Indian • Biryani • Meals</p>
+                <a href="#menu" class="btn">View Menu</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza">
+                <h3>Pizza Corner</h3>
+                <p>Pizza • Burger • Fast Food</p>
+                <a href="#menu" class="btn">View Menu</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate Cake">
+                <h3>Sweet Treats</h3>
+                <p>Cakes • Ice Cream • Desserts</p>
+                <a href="#menu" class="btn">View Menu</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Food Menu -->
+    <section id="menu">
+        <h2>Our Food Menu</h2>
+
+        <div class="container">
+
+            <div class="card food-card">
+                <img src="https://media.istockphoto.com/id/1410130688/photo/mutton-biryani-served-in-a-golden-dish-isolated-on-dark-background-side-view-indian-food.jpg?s=612x612&w=0&k=20&c=ueFrghYZuKAty-rFVe5dtMtNIbn0jaUsSvCUwTVOmd8=" alt="Chicken Biryani">
+                <h3>Chicken Biryani</h3>
+                <p>Delicious spicy chicken biryani.</p>
+                <h4>₹180</h4>
+                <button onclick="orderFood('Chicken Biryani', 180)">Order Now</button>
+            </div>
+
+            <div class="card food-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Cheese Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>Hot pizza loaded with cheese.</p>
+                <h4>₹220</h4>
+                <button onclick="orderFood('Cheese Pizza', 220)">Order Now</button>
+            </div>
+
+            <div class="card food-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Burger">
+                <h3>Veg Burger</h3>
+                <p>Fresh burger with tasty fillings.</p>
+                <h4>₹100</h4>
+                <button onclick="orderFood('Veg Burger', 100)">Order Now</button>
+            </div>
+
+            <div class="card food-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Soft and delicious chocolate cake.</p>
+                <h4>₹150</h4>
+                <button onclick="orderFood('Chocolate Cake', 150)">Order Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: FoodExpress144@gmail.com</p>
+        <p>Phone: 9876543210</p>
+        <p>Order your favourite food today!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 FoodExpress | All Rights Reserved</p>
+    </footer>
+
+    <!-- Simple Order Function -->
+    <script>
+        function orderFood(foodName, price) {
+            alert("You selected: " + foodName + "\nPrice: ₹" + price +
+                  "\nThank you for choosing FoodExpress!");
+        }
+    </script>
+
+</body>
+</html>
